@@ -154,7 +154,7 @@ html {
 body {
     font-family: 'Kanit', sans-serif;
     line-height: 30px;
-    background-color: #f3dd5f;
+    background-color: #f8e576;
     
 }
 
@@ -217,4 +217,71 @@ body {
 
 #nav-wrapper a:hover {
     color: rgb(255, 255, 255);
+}
+
+/* begin body */
+main {
+    background-color: #fdfbee;
+    width: 90%;
+    margin-left: 80px;
+    padding-top: 15px;
+}
+
+#slideshow {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;;
+    overflow: auto;
+}
+
+.slideshow-container {
+    align-items: center;
+    padding: 15px;
+    margin: auto;
+    position: relative;
+}
+
+.slides {
+    padding: 60px;
+}
+
+.slidetext {
+    font-size: 12px;
+    padding: 8px 12px;
+    line-height: 10px;
+    text-align: center;
+}
+
+.slides img {
+    background-position: 50% 50%;
+    background-size: cover;
+    width: 100%;
+    height: auto;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center; 
+  }
+
+@-webkit-keyframes fade {
+    from {
+        opacity: 0.2
+    }
+
+    to {
+        opacity: 2
+    }
+}
+
+@keyframes fade {
+    0% {
+        opacity: 0
+    }
+
+    50% {
+        opacity: 2
+    }
+    100% {
+        opacity: 0
+    }
+
 }
